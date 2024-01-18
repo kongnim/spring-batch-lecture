@@ -22,17 +22,17 @@
             <artifactId>spring-boot-starter-batch</artifactId>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
+            <groupId>mysql</groupId> <!-- 추가! -->
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
+            <groupId>com.h2database</groupId> <!-- 추가! -->
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
+            <groupId>org.projectlombok</groupId> <!-- 추가! -->
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>

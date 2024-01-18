@@ -1,6 +1,6 @@
 spring:
-  profiles:
-    active: local
+  profiles: # Job 실행시 두개의 디비를 실행의 관점에서 선택해서 실행할수있도록 application.yml 설정
+    active: local # 기본은 로컬로. -Dspring.profiles.active=원하는profile 우선순위가 더 높음.
 
 ---
 spring:
@@ -8,7 +8,7 @@ spring:
     activate:
       on-profile: local
   datasource:
-    hikari:
+    hikari: # 스프링부트는 기본적으로 데이터소스를 hikari를 사용. 커넥션 풀을 지원하는 오픈소스
       jdbc-url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
       username: sa
       password:
